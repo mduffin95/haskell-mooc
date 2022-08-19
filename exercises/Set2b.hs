@@ -85,8 +85,8 @@ myGcd a b
 
 leftpad :: String -> Int -> String
 leftpad s n
-  | length s >= n = s
-  | length s < n = leftpad (' ':s) n
+  | length s >= n  = s
+  | otherwise      = leftpad (' ':s) n
 
 ------------------------------------------------------------------------------
 -- Ex 5: let's make a countdown for a rocket! Given a number, you
